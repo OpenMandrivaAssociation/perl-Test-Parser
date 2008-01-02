@@ -17,6 +17,7 @@ BuildRequires:  perl-devel
 %endif
 BuildRequires:  perl(XML::Simple)
 BuildRequires:  perl(XML::Twig)
+BuildRoot:      %{_tmppath}/%{name}-%{version}
 
 %description 
 This module serves as a common base class for test log parsers. These tools are
