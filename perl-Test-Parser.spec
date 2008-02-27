@@ -1,6 +1,6 @@
 %define module  Test-Parser
 %define name    perl-%{module}
-%define version 1.5
+%define version 1.6
 %define release %mkrel 1
 
 Name:           %{name}
@@ -10,8 +10,8 @@ Summary:        Base class for parsing log files from test runs, and displays in
 License:        GPL or Artistic
 Group:          Development/Perl
 URL:            http://search.cpan.org/dist/%{module}
-Source:         http://www.cpan.org/modules/by-module/Test/%{module}-%{version}.tar.bz2
-Patch:          %{name}-1.5-tests.patch
+Source:         http://www.cpan.org/modules/by-module/Test/%{module}-%{version}.tar.gz
+Patch:          %{name}-1.6-fix-object-type.patch
 %if %{mdkversion} < 1010
 BuildRequires:  perl-devel
 %endif
