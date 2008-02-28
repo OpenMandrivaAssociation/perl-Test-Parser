@@ -1,6 +1,6 @@
 %define module  Test-Parser
 %define name    perl-%{module}
-%define version 1.6
+%define version 1.7
 %define release %mkrel 1
 
 Name:           %{name}
@@ -11,7 +11,6 @@ License:        GPL or Artistic
 Group:          Development/Perl
 URL:            http://search.cpan.org/dist/%{module}
 Source:         http://www.cpan.org/modules/by-module/Test/%{module}-%{version}.tar.gz
-Patch:          %{name}-1.6-fix-object-type.patch
 %if %{mdkversion} < 1010
 BuildRequires:  perl-devel
 %endif
@@ -29,7 +28,6 @@ Interface' (TRPI) XML schema, developed by SpikeSource.
 
 %prep
 %setup -q -n %{module}-%{version}
-%patch -p 1
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
