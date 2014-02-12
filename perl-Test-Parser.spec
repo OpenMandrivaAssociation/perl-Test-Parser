@@ -1,8 +1,9 @@
 %define module  Test-Parser
+%define debug_package %{nil}
 
 Name:		perl-%{module}
 Version:	1.9
-Release:	3
+Release:	4
 Summary:	Base class for parsing log files from test runs, and displays in an XML syntax 
 License:	GPL or Artistic
 Group:		Development/Perl
@@ -38,39 +39,3 @@ perl Makefile.PL INSTALLDIRS=vendor
 %{perl_vendorlib}/Test
 %{_mandir}/*/*
 %{_bindir}/*
-
-%changelog
-* Fri Sep 04 2009 Thierry Vignaud <tvignaud@mandriva.com> 1.9-2mdv2010.0
-+ Revision: 430599
-- rebuild
-
-* Fri Jul 11 2008 Guillaume Rousse <guillomovitch@mandriva.org> 1.9-1mdv2009.0
-+ Revision: 233678
-- update to new version 1.9
-
-* Thu Feb 28 2008 Guillaume Rousse <guillomovitch@mandriva.org> 1.7-1mdv2008.1
-+ Revision: 175989
-- new version
-
-* Wed Feb 27 2008 Guillaume Rousse <guillomovitch@mandriva.org> 1.6-1mdv2008.1
-+ Revision: 175718
-- new version
-  drop test patch (merged upstream)
-  new patch for fixing object type
-
-* Wed Jan 02 2008 Olivier Blin <oblin@mandriva.com> 1.5-1mdv2008.1
-+ Revision: 140721
-- restore BuildRoot
-
-  + Thierry Vignaud <tvignaud@mandriva.com>
-    - kill re-definition of %%buildroot on Pixel's request
-
-
-* Wed Mar 14 2007 Guillaume Rousse <guillomovitch@mandriva.org> 1.5-1mdv2007.1
-+ Revision: 143528
-- fix build dependencies
-- Imported perl-Test-Parser-1.5-1mdv2007.1 into SVN repository.
-
-* Wed Mar 14 2007 Guillaume Rousse <guillomovitch@mandriva.org> 1.5-1mdv2007.1
-- first mdv release
-
