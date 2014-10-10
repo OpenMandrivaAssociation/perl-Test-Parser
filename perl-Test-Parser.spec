@@ -3,7 +3,7 @@
 
 Name:		perl-%{module}
 Version:	1.9
-Release:	4
+Release:	5
 Summary:	Base class for parsing log files from test runs, and displays in an XML syntax 
 License:	GPL or Artistic
 Group:		Development/Perl
